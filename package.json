@@ -10,10 +10,12 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
+    "csv-parser": "^3.2.0",
     "zod": "^3.23.8"
   },
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
   }
 }
