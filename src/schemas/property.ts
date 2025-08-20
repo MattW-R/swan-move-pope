@@ -1,8 +1,12 @@
 import { z } from "zod";
 
-export const RegionSchema = z.enum(["ENGLAND", "SCOTLAND", "WALES", "N.IRELAND"], {
-	invalid_type_error: "Region must be one of ENGLAND, SCOTLAND, WALES, N.IRELAND",
-});
+export const RegionSchema = z.enum(
+	["ENGLAND", "SCOTLAND", "WALES", "N.IRELAND"],
+	{
+		invalid_type_error:
+			"Region must be one of ENGLAND, SCOTLAND, WALES, N.IRELAND",
+	},
+);
 
 export type Region = z.infer<typeof RegionSchema>;
 
@@ -13,7 +17,9 @@ export const PropertySchema = z
 		postcode: z.string().min(1, "postcode is required"),
 		monthlyRentPence: z
 			.union([z.string(), z.number()])
-			.transform((value) => (typeof value === "string" ? parseInt(value, 10) : value))
+			.transform((value) =>
+				typeof value === "string" ? parseInt(value, 10) : value,
+			)
 			.pipe(
 				z
 					.number({ invalid_type_error: "monthlyRentPence must be a number" })
@@ -23,7 +29,9 @@ export const PropertySchema = z
 		region: RegionSchema,
 		capacity: z
 			.union([z.string(), z.number()])
-			.transform((value) => (typeof value === "string" ? parseInt(value, 10) : value))
+			.transform((value) =>
+				typeof value === "string" ? parseInt(value, 10) : value,
+			)
 			.pipe(
 				z
 					.number({ invalid_type_error: "capacity must be a number" })
@@ -32,11 +40,16 @@ export const PropertySchema = z
 			),
 		tenancyEndDate: z
 			.union([z.string().min(1, "tenancyEndDate is required"), z.date()])
-			.transform((value) => (typeof value === "string" ? new Date(value) : value))
+			.transform((value) =>
+				typeof value === "string" ? new Date(value) : value,
+			)
 			.pipe(
 				z
 					.date({ invalid_type_error: "tenancyEndDate must be a date" })
-					.refine((d) => !Number.isNaN(d.getTime()), "tenancyEndDate must be a valid date"),
+					.refine(
+						(d) => !Number.isNaN(d.getTime()),
+						"tenancyEndDate must be a valid date",
+					),
 			),
 	})
 	.strict();

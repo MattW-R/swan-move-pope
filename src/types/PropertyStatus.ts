@@ -1,1 +1,5 @@
-export type PropertyStatus = "PROPERTY_VACANT" | "PARTIALLY_VACANT" | "PROPERTY_ACTIVE" | "PROPERTY_OVERDUE";
+export type PropertyStatus =
+	| "PROPERTY_VACANT"
+	| "PARTIALLY_VACANT"
+	| "PROPERTY_ACTIVE"
+	| "PROPERTY_OVERDUE";
