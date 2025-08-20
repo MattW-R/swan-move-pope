@@ -1,7 +1,7 @@
 import { loadData, properties, tenants } from "./data";
 import { expect, describe, it, beforeAll } from 'vitest'
 
-describe("data", () => {
+describe("data helper", () => {
     beforeAll(async () => {
         await loadData();
     });
