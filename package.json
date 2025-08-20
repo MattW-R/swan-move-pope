@@ -1,0 +1,16 @@
+{
+  "name": "swan-move-pope",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MattWR <Matthew.wr89@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  }
+}

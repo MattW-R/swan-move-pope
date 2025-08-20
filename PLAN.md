@@ -10,7 +10,8 @@
 
 ## Implementation
 
-- [ ] Initialise node-TS project with src/ directory
+- [X] Initialise node-TS project with src/ directory
+    - Also added .gitignore
 - [ ] Add input data to project
 - [ ] Create schemas for input (csv) data
 - [ ] Create helper, with tests, to parse & store in-memory csv data
