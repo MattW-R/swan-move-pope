@@ -13,7 +13,7 @@
 - [X] Initialise node-TS project with src/ directory
     - Also added .gitignore
 - [X] Add input data to project
-- [ ] Create schemas for input (csv) data
+- [X] Create schemas for input (csv) data
 - [ ] Create helper, with tests, to parse & store in-memory csv data
 - [ ] Create helper, with tests, to calculate average rent of properties by region (matching requirements criteria)
 - [ ] Create helper, with tests, to calculate monthly rent, per tenant for a given property (matching requirements criteria)
