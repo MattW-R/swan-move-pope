@@ -18,7 +18,7 @@
 - [X] Create helper, with tests, to calculate average rent of properties by region (matching requirements criteria)
 - [X] Create helper, with tests, to calculate monthly rent, per tenant for a given property (matching requirements criteria)
 - [X] Create helper, with tests, to validate the postcode of all properties, per tenant for a given property (matching requirements criteria)
-- [ ] Create helper, with tests, to get the 'status' of a property, per tenant for a given property (matching requirements criteria)
+- [X] Create helper, with tests, to get the 'status' of a property, per tenant for a given property (matching requirements criteria)
 - [ ] Add integration tests that use the data
 - [ ] Dockerise node setup for portability
 - [ ] Install formatter & run over project
