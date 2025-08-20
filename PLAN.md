@@ -16,7 +16,7 @@
 - [X] Create schemas for input (csv) data
 - [X] Create helper, with tests, to parse & store in-memory csv data
 - [X] Create helper, with tests, to calculate average rent of properties by region (matching requirements criteria)
-- [ ] Create helper, with tests, to calculate monthly rent, per tenant for a given property (matching requirements criteria)
+- [X] Create helper, with tests, to calculate monthly rent, per tenant for a given property (matching requirements criteria)
 - [ ] Create helper, with tests, to validate the postcode of all properties, per tenant for a given property (matching requirements criteria)
 - [ ] Create helper, with tests, to get the 'status' of a property, per tenant for a given property (matching requirements criteria)
 - [ ] Dockerise node setup for portability

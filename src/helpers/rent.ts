@@ -8,3 +8,19 @@ export const calculateAverageRentByRegion = (properties: Property[], region: Reg
 	const totalRentPence = propertiesInRegion.reduce((total, property) => total + property.monthlyRentPence, 0);
 	return totalRentPence / propertiesInRegion.length;
 };
+
+export const calculateMonthlyRentPerTenant = (property: Property, numberOfTenants: number, outputUnits: 'pounds' | 'pence'): number => {
+	if (numberOfTenants <= 0) {
+		throw new Error("Number of tenants must be greater than zero");
+	}
+
+	if (numberOfTenants > property.capacity) {
+		throw new Error("Number of tenants exceeds property capacity");
+	}
+
+	const monthlyRentPence = property.monthlyRentPence / numberOfTenants;
+	if (outputUnits === 'pounds') {
+		return monthlyRentPence / 100; // Convert pence to pounds
+	}
+	return monthlyRentPence; // Return in pence
+}
