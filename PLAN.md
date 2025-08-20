@@ -20,3 +20,4 @@
 - [ ] Create helper, with tests, to validate the postcode of all properties, per tenant for a given property (matching requirements criteria)
 - [ ] Create helper, with tests, to get the 'status' of a property, per tenant for a given property (matching requirements criteria)
 - [ ] Dockerise node setup for portability
+- [ ] Add project README
