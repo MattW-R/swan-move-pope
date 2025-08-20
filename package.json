@@ -1,21 +1,23 @@
 {
-  "name": "swan-move-pope",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "MattWR <Matthew.wr89@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^24.3.0",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
-  },
-  "dependencies": {
-    "csv-parser": "^3.2.0",
-    "zod": "^3.23.8"
-  },
-  "type": "module",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "vitest run"
-  }
+	"name": "swan-move-pope",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "MattWR <Matthew.wr89@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.0",
+		"@types/node": "^24.3.0",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"dependencies": {
+		"csv-parser": "^3.2.0",
+		"zod": "^3.23.8"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"test": "vitest run",
+		"format": "biome format --fix"
+	}
 }
