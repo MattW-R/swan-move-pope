@@ -22,4 +22,4 @@
 - [X] Add integration tests that use the data
 - [X] Dockerise node setup for portability
 - [X] Install formatter & run over project
-- [ ] Add project README
+- [X] Add project README
