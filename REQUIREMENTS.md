@@ -21,3 +21,14 @@
     - If a property has at least one tenant but fewer tenants than the capacity and the current date is not past the tenancy end date, return "PARTIALLY_VACANT".
     - If a property has tenants and no capacity, and the current date is not past the tenancy end date, return "PROPERTY_ACTIVE".
     - If a property has at least one tenant but the current date is past the tenancy end date, return "PROPERTY_OVERDUE".
+
+## Guidelines
+
+- You don't need to provide a user interface or API. We recommend a simpler solution such as passing unit tests.
+- Please code your solution in Typescript. 
+- It should run in node.js.
+- We value simplicity
+- We value elegant solutions and clean code
+- We value automated tests
+- We value clear, concise, and readable documentation for communication and an entry point to the solution e.g. a README.md
+- We would like to be able to run the code ourselves.
