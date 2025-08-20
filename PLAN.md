@@ -10,9 +10,8 @@
 
 ## Implementation
 
-- [ ] Initialise node-TS project
+- [ ] Initialise node-TS project with src/ directory
 - [ ] Add input data to project
-- [ ] Create empty index.ts & src/ directory
 - [ ] Create schemas for input (csv) data
 - [ ] Create helper, with tests, to parse & store in-memory csv data
 - [ ] Create helper, with tests, to calculate average rent of properties by region (matching requirements criteria)
