@@ -1,5 +1,9 @@
 # swan-move-pope
 
+## [Requirements](./REQUIREMENTS.md)
+
+## [Plan](./PLAN.md)
+
 ## To run the test suite & prove functionality:
 
 ### Prerequisite
